@@ -1,0 +1,64 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+body, div, h3, p, input{
+    margin: 0px;
+    padding: 0px;
+}
+h1{
+    color: #48e;
+    text-decoration: underline;
+}
+h3{
+    padding: 20px;
+    margin-bottom: 20px;    
+}
+.publicacion{
+    text-align: left;
+    margin: 20px;
+    color: #222;
+    opacity: 0;
+    animation: aparecer 1s forwards 0.5s;
+}
+.publicacion p{
+    padding: 10px 20px;
+    border-left: 2px solid #48e;
+}
+.publicacion h3{
+    color: #48e;
+    border-bottom: 2px solid #48e;
+    display: inline-block;
+    padding: 0;
+    margin-bottom: 0px;
+}
+.comentarios{
+    display: flex;
+
+}
+.comentarios input{
+    padding: 6px 10px;
+    border: none;
+    background-color: #48e;
+    color: aliceblue;
+    outline: none;
+}
+.comentarios .comentario{
+    flex-grow: 1;
+}
+.comentarios .enviar{
+    min-width: 60px;
+    padding: 6px 10px;
+    font-weight: 700;
+}
+.comentario::placeholder{
+    color: #bcf;
+}
+@keyframes aparecer{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
